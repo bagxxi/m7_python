@@ -1,0 +1,9 @@
+{% extends 'index.html' %}
+{% block content %}
+    <h1>Agregar nuevo inmueble </h1>
+    <form method='POST'>
+            {% csrf_token %}
+            {{ u_form.as_p}}
+            <button>Registrar</button>
+    </form>
+{% endblock %}
